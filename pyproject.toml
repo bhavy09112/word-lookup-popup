@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "word-lookup-popup"
+version = "0.1.0"
+description = "Mac-like word lookup popup for Windows with dictionary API and local Ollama fallback."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Word Lookup Contributors" }
+]
+dependencies = [
+  "keyboard>=0.13.5",
+  "pyperclip>=1.8.2",
+  "requests>=2.31.0",
+]
+
+[project.scripts]
+word-lookup = "word_lookup:main"
+
+[tool.setuptools]
+py-modules = ["word_lookup"]
