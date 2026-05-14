@@ -8,8 +8,12 @@ Select text anywhere, press a shortcut, and get a clean popup definition near yo
 
 - Global hotkey lookup: `Alt+Shift+D`
 - Fallback hotkey: `Ctrl+Alt+D`
+- `Ctrl+H` opens lookup history
+- `Ctrl+L` opens saved favorites
+- `Ctrl+F` favorites the current word
+- `S` plays pronunciation via TTS
 - Uses free online dictionary API first
-- Falls back to local Ollama AI definitions
+- Falls back to local Ollama AI definitions with an `AI Definition` result
 - Supports phrase explanation (plain English) via Ollama
 - Works in browsers, PDFs, and regular desktop apps
 
@@ -46,6 +50,16 @@ python word_lookup.py
 ```
 
 Use as Administrator for reliable global shortcut behavior.
+
+## Screenshot
+
+![Word Lookup Popup AI Definition](screenshot2.png)
+
+*Screenshot showing the AI Definition fallback from Ollama.*
+
+![Word Lookup Popup normal Definition from free api](screenshot.png)
+
+*Screenshot showing the definition from a free api.*
 
 ## Usage
 
